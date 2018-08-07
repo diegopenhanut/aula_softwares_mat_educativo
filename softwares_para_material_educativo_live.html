@@ -55,9 +55,10 @@ background-position: 50% 50%
 
 
 ---
+class: middle, center
 # Exemplo de material feito no Inkscape
 
-&lt;iframe width="800" height="600" src="https://www.youtube.com/embed/9zHZTF7cMs4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe width="800" height="600" src="https://www.youtube.com/embed/9zHZTF7cMs4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen controls autoplay&gt;&lt;/iframe&gt;
 
 ---
 class: center, middle
@@ -77,7 +78,8 @@ class: center, bottom, inverse
 # Mudando o tamanho do slide para usar impressões a4
 
 ---
-class: center
+class: middle, center
+
 &lt;iframe width="800" height="600" src="https://www.youtube.com/embed/qhD2tGF1vx4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 
 ---
@@ -86,6 +88,8 @@ class: center, bottom, inverse
 # Banners
 
 ---
+class: middle, center
+
 &lt;iframe width="800" height="600" src="https://www.youtube.com/embed/bh0QciAobQM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 ---
 class: center, bottom, inverse
@@ -94,6 +98,8 @@ class: center, bottom, inverse
 Não recomendado para impressão em preto e branco e xerox
 
 ---
+class: middle, center
+
 &lt;iframe width="800" height="600" src="https://www.youtube.com/embed/L1cn9_qJ-Hw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 
 ---
@@ -101,6 +107,7 @@ class: center, bottom, inverse
 # Usando em monitores e displays, indefinidamente
 
 ---
+class: middle, center
 
 &lt;iframe width="800" height="600" src="https://www.youtube.com/embed/6qVxwVHD8S4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;
 
@@ -229,12 +236,23 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   d.head.appendChild(s);
 })();</script>
 
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+<script>
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
   }
-});
+})();
 </script>
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

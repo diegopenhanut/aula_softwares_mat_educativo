@@ -49,9 +49,10 @@ background-position: 50% 50%
 
 
 ---
+class: middle, center
 # Exemplo de material feito no Inkscape
 
-<iframe width="800" height="600" src="https://www.youtube.com/embed/9zHZTF7cMs4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="800" height="600" src="https://www.youtube.com/embed/9zHZTF7cMs4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen controls autoplay></iframe>
 
 ---
 class: center, middle
@@ -71,7 +72,8 @@ class: center, bottom, inverse
 # Mudando o tamanho do slide para usar impressões a4
 
 ---
-class: center
+class: middle, center
+
 <iframe width="800" height="600" src="https://www.youtube.com/embed/qhD2tGF1vx4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ---
@@ -80,6 +82,8 @@ class: center, bottom, inverse
 # Banners
 
 ---
+class: middle, center
+
 <iframe width="800" height="600" src="https://www.youtube.com/embed/bh0QciAobQM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 ---
 class: center, bottom, inverse
@@ -88,6 +92,8 @@ class: center, bottom, inverse
 Não recomendado para impressão em preto e branco e xerox
 
 ---
+class: middle, center
+
 <iframe width="800" height="600" src="https://www.youtube.com/embed/L1cn9_qJ-Hw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ---
@@ -95,6 +101,7 @@ class: center, bottom, inverse
 # Usando em monitores e displays, indefinidamente
 
 ---
+class: middle, center
 
 <iframe width="800" height="600" src="https://www.youtube.com/embed/6qVxwVHD8S4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
